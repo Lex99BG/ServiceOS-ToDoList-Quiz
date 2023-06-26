@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.webiste_wrapper {
+    background: radial-gradient(circle, rgba(95,157,160,1) 0%, rgba(60,131,134,1) 100%);
+    width: 100%;
+    height: 100vh;
+    color: #555;
+}
+.webiste_wrapper .container {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 0;
+}
+.webiste_wrapper .container .quiz {
+    background-color: #FFF1DF;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    display: grid;
+    row-gap: 20px;
+}
+.webiste_wrapper .container .quiz .answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+.webiste_wrapper .container .quiz .answers button {
+    color: #fff;
+    background-color: #DEB887;
+    font-size: 18px;
+    font-weight: bold;
+    border:0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+}
+.webiste_wrapper .container .quiz .answers button:hover {
+    background-color: bisque;
+    color: #555;
+}
+.webiste_wrapper .container .quiz .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.webiste_wrapper .container .quiz .buttons button {
+    color: #fff;
+    background-color: #5D997E;
+    font-size: 18px;
+    font-weight: bold;
+    border:0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    min-width: 30%;
+}
+.webiste_wrapper .container .quiz .buttons button:hover {
+    background-color: #206847;
+}
+.webiste_wrapper .container .quiz .restart_btn {
+    color: #fff;
+    background-color: #DEB887;
+    font-size: 18px;
+    font-weight: bold;
+    border:0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+}
+.webiste_wrapper .container .quiz .restart_btn:hover {
+    background-color: bisque;
+    color: #555;
+}
+@media (max-width: 600px) {
+    .webiste_wrapper .container .quiz .answers button {
+        font-size: 16px;
+    }
+    .webiste_wrapper .container .quiz .answers {
+        grid-template-columns: 1fr;
+    }
+}
